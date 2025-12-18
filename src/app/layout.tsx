@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Nishmika Ekanayaka Portfolio",
   description: "I'm a self-driven full-stack developer passionate about building impactful applications that solve real-world problems — from emergency response to real-time communication and tourism platforms.",
   icons: {
-    icon: "/assets/logoW 1.png",
+    icon: "/assets/tabIcon.png",
   },
 };
 
