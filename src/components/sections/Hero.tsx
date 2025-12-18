@@ -18,7 +18,7 @@ const floatingIcons = [
         delay: 0.5
     }, // Mongo
     {
-        src: "/assets/java.png",
+        src: "/assets/Java.png",
         x: { mobile: -100, desktop: -180 },
         y: { mobile: -20, desktop: -25 },
         delay: 1
