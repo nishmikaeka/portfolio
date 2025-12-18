@@ -103,7 +103,7 @@ export function Contact() {
                 </p>
             </motion.div>
 
-            <div className="flex w-full max-w-2xl flex-col gap-12">
+            <div className="flex w-full max-w-lg  flex-col gap-12">
                 <motion.form
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
