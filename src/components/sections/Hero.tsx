@@ -133,6 +133,7 @@ export function Hero() {
                             src="/assets/My photo.png"
                             alt="Nishmika"
                             fill
+                            sizes="(max-width: 640px) 300px, 450px"
                             className="object-contain object-bottom grayscale"
                             priority
                         />
@@ -181,6 +182,7 @@ export function Hero() {
                                         src={icon.src}
                                         alt=""
                                         fill
+                                        sizes="(max-width: 640px) 16px, 24px"
                                         className="object-contain"
                                     />
                                 </motion.div>

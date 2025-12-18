@@ -97,8 +97,8 @@ export function Contact() {
                 viewport={{ once: true }}
                 className="flex flex-col items-center gap-1 text-center"
             >
-                <h2 className="text-xl font-bold text-zinc-950 sm:text-4xl dark:text-zinc-50">Get In Touch</h2>
-                <p className="max-w-2xl text-md text-zinc-600 dark:text-zinc-400">
+                <h2 className="text-xl font-bold text-zinc-950 sm:text-4xl dark:text-zinc-50">Get In Touch.</h2>
+                <p className="max-w-2xl text-xs sm:text-md text-zinc-600 dark:text-zinc-400">
                     Get in touch or shoot me an email directly on <strong>nurannishmika22@gmail.com</strong>
                 </p>
             </motion.div>
@@ -112,7 +112,7 @@ export function Contact() {
                     className="flex w-full flex-col gap-6 rounded-2xl bg-zinc-50/50 p-8 dark:bg-zinc-900 shadow-sm"
                 >
                     <div className="flex flex-col gap-2">
-                        <label htmlFor="name" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Name</label>
+                        <label htmlFor="name" className="text-xs sm:text-sm font-medium text-zinc-700 dark:text-zinc-300">Name</label>
                         <input
                             type="text"
                             id="name"
@@ -121,12 +121,12 @@ export function Contact() {
                             value={formData.name}
                             onChange={handleChange}
                             disabled={isSubmitting}
-                            className="rounded-lg border border-zinc-200 bg-white p-3 outline-none focus:border-black focus:ring-1 focus:ring-black dark:border-zinc-800 dark:bg-zinc-950 disabled:opacity-50"
+                            className="rounded-lg border text-xs sm:text-sm border-zinc-200 bg-white p-3 outline-none focus:border-black focus:ring-1 focus:ring-black dark:border-zinc-800 dark:bg-zinc-950 disabled:opacity-50"
                             placeholder="Your name"
                         />
                     </div>
                     <div className="flex flex-col gap-2">
-                        <label htmlFor="email" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Email</label>
+                        <label htmlFor="email" className="text-xs sm:text-sm font-medium text-zinc-700 dark:text-zinc-300">Email</label>
                         <input
                             type="email"
                             id="email"
@@ -135,12 +135,12 @@ export function Contact() {
                             value={formData.email}
                             onChange={handleChange}
                             disabled={isSubmitting}
-                            className="rounded-lg border border-zinc-200 bg-white p-3 outline-none focus:border-black focus:ring-1 focus:ring-black dark:border-zinc-800 dark:bg-zinc-950 disabled:opacity-50"
+                            className="rounded-lg border text-xs sm:text-sm border-zinc-200 bg-white p-3 outline-none focus:border-black focus:ring-1 focus:ring-black dark:border-zinc-800 dark:bg-zinc-950 disabled:opacity-50"
                             placeholder="your.email@example.com"
                         />
                     </div>
                     <div className="flex flex-col gap-2">
-                        <label htmlFor="message" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">Message</label>
+                        <label htmlFor="message" className="text-xs sm:text-sm font-medium text-zinc-700 dark:text-zinc-300">Message</label>
                         <textarea
                             id="message"
                             name="message"
@@ -149,14 +149,14 @@ export function Contact() {
                             value={formData.message}
                             onChange={handleChange}
                             disabled={isSubmitting}
-                            className="resize-none rounded-lg border border-zinc-200 bg-white p-3 outline-none focus:border-black focus:ring-1 focus:ring-black dark:border-zinc-800 dark:bg-zinc-950 disabled:opacity-50"
+                            className="resize-none rounded-lg border text-xs sm:text-sm border-zinc-200 bg-white p-3 outline-none focus:border-black focus:ring-1 focus:ring-black dark:border-zinc-800 dark:bg-zinc-950 disabled:opacity-50"
                             placeholder="How can I help you?"
                         />
                     </div>
                     <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="flex items-center justify-center gap-2 rounded-lg bg-black px-6 py-3 font-medium text-white transition-all hover:scale-102 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="flex items-center text-xs sm:text-sm justify-center gap-2 rounded-lg bg-black px-6 py-3 font-medium text-zinc-50 transition-all hover:scale-102 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         {isSubmitting ? (
                             <>

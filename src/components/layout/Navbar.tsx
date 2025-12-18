@@ -41,9 +41,10 @@ export function Navbar() {
                     <Link href="/" className="relative h-5 w-15 sm:h-10 sm:w-15" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                         {mounted && (
                             <Image
-                                src={resolvedTheme === "dark" || resolvedTheme === undefined ? "/assets/logoW 1.png" : "/assets/logoB.png"}
+                                src={resolvedTheme === "dark" || resolvedTheme === undefined ? "/assets/logoW.png" : "/assets/logoB.png"}
                                 alt="Logo"
                                 fill
+                                sizes="60px"
                                 className="object-contain object-left"
                                 priority
                             />
@@ -66,10 +67,10 @@ export function Navbar() {
                 </div>
 
                 {/* Right Side: Download CV (Desktop) */}
-                <div className="hidden md:block">
+                <div className="hidden md:block hover:scale-105 transition-transform">
                     <a
                         href="/assets/Nishmika Ekanayaka CV.pdf" target="_blank"
-                        className="rounded-full bg-zinc-950 px-5 py-2 text-sm font-medium text-white shadow-sm transition-transform hover:scale-105 dark:bg-zinc-50 dark:text-zinc-950"
+                        className="rounded-full bg-zinc-950 px-5 py-2 text-sm font-medium text-white shadow-sm transition-transform  dark:bg-zinc-50 dark:text-zinc-950"
                     >
                         Download CV
                     </a>
