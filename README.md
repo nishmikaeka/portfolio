@@ -1,6 +1,7 @@
 # Portfolio | Nishmika Ekanayaka
 
 A high-performance, minimalist portfolio website built with **Next.js 15**, **TypeScript**, and **Tailwind CSS 4**. Designed to showcase software engineering projects, technical expertise, and professional background.
+View portfolio:[here](https://portfolio-nishmikas-projects.vercel.app/) 
 
 ![Portfolio Screenshot](public/assets/screenshot.png)
 
