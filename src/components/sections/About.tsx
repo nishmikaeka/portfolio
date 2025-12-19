@@ -34,7 +34,7 @@ export function About() {
             >
                 <h2 className="text-xl font-bold text-left text-zinc-950 sm:text-4xl dark:text-zinc-50">About Me.</h2>
                 <p className="max-w-lg text-justify  leading-relaxed font-medium text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
-                    A 3rd-year BICT undergraduate at the University of Sri Jayewardenepura, Sri Lanka (CGPA: 3.50), with a passion for building full-stack applications that <strong>solve real-world problems.</strong>
+                    A 3rd-year BICT undergraduate at the <strong>University of Sri Jayewardenepura, Sri Lanka (CGPA: 3.50)</strong>, with a passion for building full-stack applications that <strong>solve real-world problems.</strong>
                     I focus on creating fast, scalable, and impactful systems - combining clean architecture, real-time features, and smooth, user-friendly experiences across web and mobile.
                     Driven by curiosity and a desire to make technology meaningful, I’m constantly sharpening my skills in performance optimization and end-to-end development - always prioritizing intuitive, polished UX that users love.
                     Always learning, always building - ready for high-impact software engineering roles.

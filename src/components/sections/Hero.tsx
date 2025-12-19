@@ -96,7 +96,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           className="text-sm font-medium  tracking-widest text-zinc-950 dark:text-zinc-200 sm:text-xl"
         >
-          `Hello, I&apos;m Nishmika`
+          Hello, I&apos;m Nishmika
         </motion.h1>
 
         {/* Role with Typewriter/Cycle */}

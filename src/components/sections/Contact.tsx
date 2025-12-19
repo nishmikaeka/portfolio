@@ -112,7 +112,7 @@ export function Contact() {
                     className="flex w-full flex-col gap-6 rounded-2xl bg-zinc-50/50 p-8 dark:bg-zinc-900 shadow-sm"
                 >
                     <div className="flex flex-col gap-2">
-                        <label htmlFor="name" className="text-xs sm:text-sm font-medium text-zinc-700 dark:text-zinc-300">Name</label>
+                        <label htmlFor="name" className="text-[12px] sm:text-sm font-medium text-zinc-700 dark:text-zinc-300">Name</label>
                         <input
                             type="text"
                             id="name"
@@ -126,7 +126,7 @@ export function Contact() {
                         />
                     </div>
                     <div className="flex flex-col gap-2">
-                        <label htmlFor="email" className="text-xs sm:text-sm font-medium text-zinc-700 dark:text-zinc-300">Email</label>
+                        <label htmlFor="email" className="text-[12px] sm:text-sm font-medium text-zinc-700 dark:text-zinc-300">Email</label>
                         <input
                             type="email"
                             id="email"
@@ -140,7 +140,7 @@ export function Contact() {
                         />
                     </div>
                     <div className="flex flex-col gap-2">
-                        <label htmlFor="message" className="text-xs sm:text-sm font-medium text-zinc-700 dark:text-zinc-300">Message</label>
+                        <label htmlFor="message" className="text-[12px] sm:text-sm font-medium text-zinc-700 dark:text-zinc-300">Message</label>
                         <textarea
                             id="message"
                             name="message"
@@ -156,7 +156,7 @@ export function Contact() {
                     <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="flex items-center text-xs sm:text-sm justify-center gap-2 rounded-lg bg-black px-6 py-3 font-medium text-zinc-50 transition-all hover:scale-102 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="flex items-center text-[12px] sm:text-sm justify-center gap-2 rounded-lg bg-black px-6 py-3 font-medium text-zinc-50 transition-all hover:scale-102 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         {isSubmitting ? (
                             <>
