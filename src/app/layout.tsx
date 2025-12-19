@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
+// Configure the font
+const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter", // This creates a CSS variable
 });
-
 export const metadata: Metadata = {
   title: "Nishmika Ekanayaka Portfolio",
-  description: "I'm a self-driven full-stack developer passionate about building impactful applications that solve real-world problems — from emergency response to real-time communication and tourism platforms.",
+  description:
+    "I'm a self-driven full-stack developer passionate about building impactful applications that solve real-world problems — from emergency response to real-time communication and tourism platforms.",
   icons: {
     icon: "/assets/tabIcon.png",
   },
@@ -28,9 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${openSans.variable} antialiased font-sans`}
-      >
+      <body className={`${inter.variable} antialiased font-sans`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -43,9 +43,7 @@ export default function RootLayout({
           <div className="hidden fixed bottom-6 left-6 z-50 md:block">
             <ThemeToggle />
           </div>
-          <main className="pt-20">
-            {children}
-          </main>
+          <main className="pt-20">{children}</main>
         </ThemeProvider>
       </body>
     </html>
