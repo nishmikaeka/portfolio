@@ -36,7 +36,7 @@ export function Navbar() {
 
   return (
     <nav className="fixed top-0 z-40 w-full bg-white/80 backdrop-blur-xs dark:bg-zinc-950/80 border-b border-zinc-200 dark:border-zinc-800">
-      <div className="container mx-auto flex h-18 items-center justify-between px-6 md:px-6 lg:px-0">
+      <div className="container mx-auto flex h-18 items-center justify-between px-6 md:px-6 ">
         {/* Left Side: Logo + Nav Links */}
         <div className="flex items-center gap-4">
           {/* Logo */}
@@ -130,8 +130,8 @@ export function Navbar() {
                       if (element) {
                         const offset = 40;
                         const bodyRect =
-                          document.body.getBoundingClientRect().top;
-                        const elementRect = element.getBoundingClientRect().top;
+                          document.body.getBoundingClientRect().top; //gets the distance from viewport to the top of the body element
+                        const elementRect = element.getBoundingClientRect().top; //gets the distance from viewport to the elements(projects,contacts)
                         const elementPosition = elementRect - bodyRect;
                         const offsetPosition = elementPosition - offset;
 
