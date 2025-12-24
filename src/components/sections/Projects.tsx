@@ -78,6 +78,19 @@ export function Projects() {
                         {/* Content */}
                         <div className="flex flex-1 flex-col gap-4 sm:gap-5 text-left">
                             <h3 className="text-lg sm:text-2xl font-semibold text-zinc-900 dark:text-zinc-50"># {index + 1} {project.title}</h3>
+
+                            {/* Mobile Image: Visible only on mobile, placed between title and description */}
+                            <div className="relative h-[250px] w-full overflow-hidden lg:hidden">
+                                <Image
+                                    src={project.image}
+                                    alt={project.title}
+                                    fill
+                                    sizes="100vw"
+                                    className="object-contain"
+                                    priority={index === 0}
+                                />
+                            </div>
+
                             <p className="text-[12px] sm:text-sm tracking-wider text-zinc-600 dark:text-zinc-400">{project.description}</p>
 
                             <div className="flex flex-wrap gap-3">
@@ -102,29 +115,28 @@ export function Projects() {
                                 ))}
                             </div>
 
-                            <div className="flex w-full items-center gap-4 pt-2 flex-col sm:flex-row">
-                                <a href={project.link} target='_blank' className="flex w-full items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-950 bg-zinc-950 px-8 py-2 text-sm font-medium tracking-wide text-white transition-transform hover:scale-105 hover:bg-zinc-800 sm:w-auto dark:border-zinc-700 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-100">
+                            <div className="flex w-full items-center gap-4 pt-2 flex-row sm:flex-row">
+                                <a href={project.link} target='_blank' className="flex flex-1 items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-950 bg-zinc-950 px-4 py-2 text-sm font-medium tracking-wide text-white transition-transform hover:scale-105 hover:bg-zinc-800 sm:w-auto sm:flex-none sm:px-8 dark:border-zinc-700 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-100">
                                     <FaExternalLinkAlt /> Live
                                 </a>
-                                <a href={project.github} target='_blank' className="flex w-full items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-200 bg-white px-8 py-2 text-sm font-medium tracking-wide text-zinc-950 transition-transform hover:scale-105 hover:bg-zinc-50 sm:w-auto dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700">
+                                <a href={project.github} target='_blank' className="flex flex-1 items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-200 bg-white px-4 py-2 text-sm font-medium tracking-wide text-zinc-950 transition-transform hover:scale-105 hover:bg-zinc-50 sm:w-auto sm:flex-none sm:px-8 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700">
                                     <FaGithub /> GitHub
                                 </a>
                             </div>
                         </div>
 
-                        {/* Images */}
-                        <div className="relative flex w-full flex-1 items-center justify-center lg:justify-end">
+                        {/* Desktop Image: Visible only on large screens */}
+                        <div className="relative hidden w-full flex-1 items-center justify-center lg:flex lg:justify-end">
                             <div className="relative h-[250px] w-full max-w-[500px] overflow-hidden sm:h-[350px]">
                                 <Image
                                     src={project.image}
                                     alt={project.title}
                                     fill
-                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                     className="object-contain"
                                     priority={index === 0}
                                 />
                             </div>
-
                         </div>
                     </motion.div>
                 ))}
