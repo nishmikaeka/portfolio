@@ -4,8 +4,9 @@ import React from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGithub, FaExternalLinkAlt } from "react-icons/fa"
-import { SiNextdotjs, SiTailwindcss, SiNestjs, SiMongodb, SiPostgresql, SiFirebase, SiExpress, SiSocketdotio } from "react-icons/si"
+import { SiNextdotjs, SiTailwindcss, SiNestjs, SiMongodb, SiPostgresql, SiFirebase, SiExpress, SiSocketdotio, SiDocker, SiSpringboot } from "react-icons/si"
 const mapbox = '/assets/mapbox.png'
+const springboot = '/assets/spring-boot.png'
 
 const projects = [
     {
@@ -21,6 +22,20 @@ const projects = [
         ],
         link: "https://resq-disaster-platform-web.vercel.app/",
         github: "https://github.com/nishmikaeka/resq-disaster-platform"
+    },
+    {
+        id: "hydratrack",
+        title: "HydraTrack",
+        description: "A beautiful and intuitive mobile app to track and improve your daily water intake. HydraTrack combines smooth, real-time visualizations with actionable insights to help users stay hydrated, maintain streaks, and meet personalized hydration goals. The app features a modern, adaptive interface and smart reminders, backed by a robust Spring Boot API to ensure reliable data tracking and analytics. Fully containerized with Docker Compose, HydraTrack offers seamless consistency across development and production environments.",
+        image: "/assets/hydratrack3.png",
+        stack: [
+            { name: "React Native", icon: FaReact, color: "#61DAFB" },
+            { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
+            { name: "Docker", icon: SiDocker, color: "#2496ED" },
+            { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+        ],
+        link: "https://github.com/nishmikaeka/hydratrack",
+        github: "https://github.com/nishmikaeka/hydratrack"
     },
     {
         id: "hangout",
@@ -117,7 +132,7 @@ export function Projects() {
 
                             <div className="flex w-full items-center gap-4 pt-2 flex-row sm:flex-row">
                                 <a href={project.link} target='_blank' className="flex flex-1 items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-950 bg-zinc-950 px-4 py-2 text-sm font-medium tracking-wide text-white transition-transform hover:scale-105 hover:bg-zinc-800 sm:w-auto sm:flex-none sm:px-8 dark:border-zinc-700 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-100">
-                                    <FaExternalLinkAlt /> Live
+                                    <FaExternalLinkAlt /> Live Demo
                                 </a>
                                 <a href={project.github} target='_blank' className="flex flex-1 items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-200 bg-white px-4 py-2 text-sm font-medium tracking-wide text-zinc-950 transition-transform hover:scale-105 hover:bg-zinc-50 sm:w-auto sm:flex-none sm:px-8 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700">
                                     <FaGithub /> GitHub
