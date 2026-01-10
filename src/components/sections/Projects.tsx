@@ -20,7 +20,7 @@ const projects = [
             { name: "Mapbox GL", icon: mapbox, color: "#06B6D4" },
             { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
         ],
-        link: "https://resq-disaster-platform-web.vercel.app/",
+        link: "https://youtube.com/shorts/hpwzf3c2JHQ",
         github: "https://github.com/nishmikaeka/resq-disaster-platform"
     },
     {
@@ -34,7 +34,7 @@ const projects = [
             { name: "Docker", icon: SiDocker, color: "#2496ED" },
             { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
         ],
-        link: "https://github.com/nishmikaeka/hydratrack",
+        link: "https://youtu.be/cubU6tp86Jc",
         github: "https://github.com/nishmikaeka/hydratrack"
     },
     {
@@ -49,7 +49,7 @@ Join rooms via meeting code or email invitation(no signup required), perfect for
             { name: "Socket.IO", icon: SiSocketdotio, color: "#ffffffff" },
             { name: "MongoDB", icon: SiMongodb, color: "#47A248" }
         ],
-        link: "https://hangout-realtime-chatroom.vercel.app/",
+        link: "https://youtu.be/3kj8aubwstM",
         github: "https://github.com/nishmikaeka/hangout-realtime-chatroom"
     },
     {
@@ -63,7 +63,7 @@ Join rooms via meeting code or email invitation(no signup required), perfect for
             { name: "Express", icon: SiExpress, color: "#000000" },
             { name: "MongoDB", icon: SiMongodb, color: "#47A248" }
         ],
-        link: "#",
+        link: "https://youtu.be/0PhkPZO7sjA",
         github: "https://github.com/orgs/Travel-Ceylon/dashboard"
     }
 ]
