@@ -25,7 +25,7 @@ export function Navbar() {
 
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    href: string
+    href: string,
   ) => {
     e.preventDefault();
     const targetId = href.replace("#", "");
@@ -79,7 +79,7 @@ export function Navbar() {
         {/* Right Side: Download CV (Desktop) */}
         <div className="hidden md:block hover:scale-105 transition-transform">
           <a
-            href="/assets/Nishmika Ekanayaka CV.pdf"
+            href="/assets/Nishmika Ekanayaka Resume.pdf"
             target="_blank"
             className="rounded-full bg-zinc-950 px-5 py-2 text-sm font-medium text-white shadow-sm transition-transform  dark:bg-zinc-50 dark:text-zinc-950"
           >
