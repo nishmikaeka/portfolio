@@ -109,7 +109,7 @@ export function Navbar() {
               <div className="flex items-center justify-between mb-4">
                 <ThemeToggle />
                 <a
-                  href="/assets/Nishmika Ekanayaka CV.pdf"
+                  href="/assets/Nishmika Ekanayaka Resume.pdf"
                   target="_blank"
                   className="flex items-center gap-2 rounded-full bg-zinc-950 px-4 py-2 text-xs font-medium text-white dark:bg-zinc-50 dark:text-zinc-950 active:scale-90 hover:scale-105 transition-transform"
                 >

@@ -40,6 +40,7 @@ const projects = [
       { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
     ],
     link: "https://youtube.com/shorts/hpwzf3c2JHQ",
+    launchLink: "https://resqsrilanka.duckdns.org/",
     github: "https://github.com/nishmikaeka/resq-disaster-platform",
   },
   {
@@ -165,20 +166,29 @@ export function Projects() {
                 ))}
               </div>
 
-              <div className="flex w-full items-center gap-4 pt-2 flex-row sm:flex-row">
+              <div className="flex flex-wrap w-full items-center gap-3 pt-4">
                 <a
                   href={project.link}
                   target="_blank"
-                  className="flex flex-1 items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-950 bg-zinc-950 px-4 py-2 text-sm font-medium tracking-wide text-white transition-transform hover:scale-105 hover:bg-zinc-800 sm:w-auto sm:flex-none sm:px-8 dark:border-zinc-700 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-100"
+                  className="flex flex-1 sm:flex-none items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-950 bg-zinc-950 px-5 py-2.5 text-sm font-medium tracking-wide text-white transition-transform hover:scale-105 hover:bg-zinc-800 sm:px-8 dark:border-zinc-700 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-100"
                 >
-                  <FaExternalLinkAlt /> Live Demo
+                  <FaExternalLinkAlt size={12} /> Live Demo
                 </a>
+                {project.launchLink && (
+                  <a
+                    href={project.launchLink}
+                    target="_blank"
+                    className="flex flex-1 sm:flex-none items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-950 bg-zinc-950 px-5 py-2.5 text-sm font-medium tracking-wide text-white transition-transform hover:scale-105 hover:bg-zinc-800 sm:px-8 dark:border-zinc-700 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-100"
+                  >
+                    <FaExternalLinkAlt size={12} /> Launch App
+                  </a>
+                )}
                 <a
                   href={project.github}
                   target="_blank"
-                  className="flex flex-1 items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-200 bg-white px-4 py-2 text-sm font-medium tracking-wide text-zinc-950 transition-transform hover:scale-105 hover:bg-zinc-50 sm:w-auto sm:flex-none sm:px-8 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700"
+                  className="flex flex-1 sm:flex-none items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-200 bg-white px-5 py-2.5 text-sm font-medium tracking-wide text-zinc-950 transition-transform hover:scale-105 hover:bg-zinc-50 sm:px-8 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-700"
                 >
-                  <FaGithub /> GitHub
+                  <FaGithub size={14} /> GitHub
                 </a>
               </div>
             </div>
