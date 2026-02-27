@@ -36,7 +36,7 @@ const floatingIcons = [
     delay: 2.5,
   }, // Python
   {
-    src: "/assets/ts.png",
+    src: "/assets/docker.png",
     x: { mobile: 120, desktop: 175 },
     y: { mobile: 70, desktop: 90 },
     delay: 3.5,

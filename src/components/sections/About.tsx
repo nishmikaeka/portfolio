@@ -2,7 +2,7 @@
 
 import React from "react"
 import { motion } from "framer-motion"
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaJava, FaGitAlt, FaDatabase } from "react-icons/fa"
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaJava, FaGitAlt, FaDocker } from "react-icons/fa"
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiNestjs, SiPostgresql, SiMongodb, SiSpringboot } from "react-icons/si"
 import { RiNextjsFill } from "react-icons/ri";
 
@@ -18,7 +18,7 @@ const stack = [
     { name: "Java", icon: FaJava, color: "#007396" },
     { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
     { name: "Git", icon: FaGitAlt, color: "#F05032" },
-    { name: "SQL", icon: FaDatabase, color: "#4479A1" },
+    { name: "Docker", icon: FaDocker, color: "#2496ED" },
 ]
 
 export function About() {
