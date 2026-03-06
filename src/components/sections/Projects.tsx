@@ -116,8 +116,31 @@ export function Projects() {
           >
             {/* Content */}
             <div className="flex flex-1 flex-col gap-4 sm:gap-5 text-left">
-              <h3 className="text-lg sm:text-2xl font-semibold text-zinc-900 dark:text-zinc-50">
+              <h3 className="flex items-center gap-3 text-lg sm:text-2xl font-semibold text-zinc-900 dark:text-zinc-50">
                 # {index + 1} {project.title}
+                {project.launchLink && (
+                  <a
+                    href={project.launchLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[10px] sm:text-xs font-semibold tracking-wider no-underline transition-all"
+                    style={{
+                      textDecoration: "none",
+                      border: "1px solid rgba(29,161,242,0.4)",
+                      backgroundColor: "rgba(29,161,242,0.1)",
+                      color: "#1da1f2",
+                    }}
+                  >
+                    <span className="relative flex h-2 w-2 items-center justify-center">
+                      <span
+                        className="absolute inline-flex h-full w-full rounded-full"
+                        style={{ backgroundColor: "#1da1f2", animation: "livePing 1.2s cubic-bezier(0, 0, 0.2, 1) infinite" }}
+                      />
+                      <span className="relative inline-flex h-1.5 w-1.5 rounded-full" style={{ backgroundColor: "#1da1f2" }} />
+                    </span>
+                    LAUNCH APP
+                  </a>
+                )}
               </h3>
 
               {/* Mobile Image: Visible only on mobile, placed between title and description */}
@@ -174,15 +197,7 @@ export function Projects() {
                 >
                   <FaExternalLinkAlt size={12} /> Live Demo
                 </a>
-                {project.launchLink && (
-                  <a
-                    href={project.launchLink}
-                    target="_blank"
-                    className="flex flex-1 sm:flex-none items-center justify-center gap-2 rounded-full shadow-sm border border-zinc-950 bg-zinc-950 px-5 py-2.5 text-sm font-medium tracking-wide text-white transition-transform hover:scale-105 hover:bg-zinc-800 sm:px-8 dark:border-zinc-700 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-100"
-                  >
-                    <FaExternalLinkAlt size={12} /> Launch App
-                  </a>
-                )}
+
                 <a
                   href={project.github}
                   target="_blank"

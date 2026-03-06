@@ -31,3 +31,16 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+@keyframes livePing {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
