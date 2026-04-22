@@ -3,6 +3,8 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
 import { Notification } from "../ui/Notification"
+import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa"
+import { SiGmail } from "react-icons/si"
 
 export function Contact() {
     const [formData, setFormData] = useState({
@@ -20,6 +22,33 @@ export function Contact() {
         message: "",
         type: "success",
     })
+
+    const socialLinks = [
+        {
+            name: "GitHub",
+            icon: FaGithub,
+            href: "https://github.com/nishmikaeka",
+            hoverColor: "hover:text-zinc-950 dark:hover:text-white"
+        },
+        {
+            name: "LinkedIn",
+            icon: FaLinkedinIn,
+            href: "https://www.linkedin.com/in/nishmika-eka/",
+            hoverColor: "hover:text-[#1da1f2]"
+        },
+        {
+            name: "Gmail",
+            icon: SiGmail,
+            href: "mailto:nurannishmika22@gmail.com",
+            hoverColor: "hover:text-[#EA4335]"
+        },
+        {
+            name: "Instagram",
+            icon: FaInstagram,
+            href: "https://www.instagram.com/nishmika_27/",
+            hoverColor: "hover:text-[#E1306C]"
+        }
+    ]
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
@@ -168,6 +197,21 @@ export function Contact() {
                         )}
                     </button>
                 </motion.form>
+            </div>
+
+            <div className="mt-2 flex w-full justify-center gap-6 md:hidden">
+                {socialLinks.map((link) => (
+                    <a
+                        key={link.name}
+                        href={link.href}
+                        target={link.name !== "Gmail" ? "_blank" : undefined}
+                        rel={link.name !== "Gmail" ? "noreferrer" : undefined}
+                        className={`text-zinc-500 transition-all duration-300 hover:-translate-y-1.5 ${link.hoverColor} dark:text-zinc-500`}
+                        title={link.name}
+                    >
+                        <link.icon className="h-5 w-5" />
+                    </a>
+                ))}
             </div>
 
             <footer className="mt-20 w-full border-t border-zinc-200 pt-8 text-center text-sm text-zinc-500 dark:border-zinc-800 dark:text-zinc-500">
