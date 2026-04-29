@@ -10,6 +10,7 @@ import {
   FaCss3Alt,
   FaGithub,
   FaExternalLinkAlt,
+  FaAws,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -38,6 +39,7 @@ const projects = [
       { name: "NestJS", icon: SiNestjs, color: "#E0234E" },
       { name: "Mapbox GL", icon: mapbox, color: "#06B6D4" },
       { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+      { name: "AWS", icon: FaAws, color: "#FF9900" },
     ],
     link: "https://youtube.com/shorts/hpwzf3c2JHQ",
     launchLink: "https://resqsrilanka.duckdns.org/",
@@ -71,6 +73,7 @@ Join rooms via meeting code or email invitation(no signup required), perfect for
       { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
     ],
     link: "https://youtu.be/3kj8aubwstM",
+    launchLink: "https://hangout-realtime-chatroom.vercel.app/",
     github: "https://github.com/nishmikaeka/hangout-realtime-chatroom",
   },
   {
